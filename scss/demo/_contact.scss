@@ -1,0 +1,25 @@
+/* ----------------------------------------------------------------
+
+	Contact.scss
+
+-----------------------------------------------------------------*/
+#contact-info {
+	background-color: #fafaf8;
+
+    h5 {
+        font-size: 0.875rem;
+        font-weight: 700;
+		color: $secondary;
+		margin-bottom: 1.325rem;
+    }
+}
+
+#contact-sidebar {
+	input {
+		padding: 1rem;
+	}
+
+	button {
+		padding: 1rem 4rem;
+	}
+}

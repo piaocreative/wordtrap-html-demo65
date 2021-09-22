@@ -1,0 +1,92 @@
+
+/* ----------------------------------------------------------------
+
+	pagetitle.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Page Title
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for page title. Thanks!
+-----------------------------------------------------------------*/
+
+#page-title {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+	padding: 1rem;
+	padding-top: 3.5rem;
+
+	.title {
+		font-family: $heading-font;
+		line-height: 1.2;
+		font-weight: 700;
+		color: $secondary;
+	}
+
+	.sub-title {
+		font-weight: 300;
+		font-size: 0.875rem;
+		color: #7f7f7f;
+		font-family: 'Inter', sans-serif;
+
+		div {
+			&:nth-child(1) {
+				&:after {
+					background-color: $theme-color;
+					content: "";
+					display: inline-block;
+					height: 1px;
+					position: relative;
+					vertical-align: middle;
+					width: 1.5rem;
+					margin-left: 1rem;
+				}
+			}
+		}
+	}
+
+	a {
+		display: inline-block;
+		text-decoration: none;
+		background-color: $theme-color;
+		font-size: 0.875rem;
+		color: $white;
+		padding: 0.65rem 2.25rem;
+		border-radius: 0.75rem;
+		font-weight: 600;
+		letter-spacing: 0.05rem;
+		font-family: $body-font;
+	}
+
+	@include media-breakpoint-down(lg) {
+		padding: 1rem;
+	}
+}
+
+.page-brand {
+	position: absolute;
+    top: 0rem;
+    right: -5rem;
+
+	@include media-breakpoint-down(xxl) {
+		right: -11rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		top: -1rem;
+    	right: -1rem;
+	}
+
+	@include media-breakpoint-down(sm) {
+		top: -1rem;
+    	right: -1rem;
+	}
+}
