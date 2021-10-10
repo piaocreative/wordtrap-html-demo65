@@ -3,8 +3,8 @@ $( document ).ready( function() {
     if ( $( '.logos' ).length ) {
         $( '.logos' ).slick({
             infinite: true,
-            slidesToShow: 7,
-            slidesToScroll: 7,
+            slidesToShow: 6,
+            slidesToScroll: 1,
             dots: false,
             arrows: false,
             responsive: [
